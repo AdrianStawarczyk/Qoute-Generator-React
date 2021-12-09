@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins&family=Smooch&display=swap');
+:root{
+  --font-author: 'Dancing Script', cursive;
+  --font-quote: 'Smooch', cursive;
+  --font: 'Poppins', sans-serif;
+
+  --dark: #383734;
+  --light: #ebe8e1;
+  --btncolor: #385f7a;
+  --btncolorhov: #0c324d;
+  --grey: #888888;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+body{
+  background-color: var(--light);
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+#quote-box{
+  position: relative;
+}
+#quote-box #text{
+  font-family: var(--font-quote);
+  max-width: 777px;
+  font-size: 30px;
+}
+#author{
+  display: inline-block;
+  padding: 20px 40px;
+  margin-left: 69%;
+  color: var(--dark);
+  background-color: var(--light);
+  border-radius: 23px;
+  font-weight: 600;
+  font-size: 23px;
+  letter-spacing: 1px;
+  max-width: 400px;
+  font-family: var(--font-author);
+}
+#buttons{
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+#buttons button{
+  border-radius: 22px;
+  background-color: var(--btncolor);
+  color: var(--light);
+  font-size: 23px;
+  transition: 0.3s;
+  padding: 7px 30px;
+  margin: 0 50px 0 50px;
+}
+#buttons button:hover{
+  background-color: var(--btncolorhov);
+  opacity: 0.7;
+}
