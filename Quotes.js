@@ -29,10 +29,7 @@ const Quotes =() =>{
       <div id="author">
         <p>{quotes.author}</p>
       </div>
-      <div id="buttons">
-
-
-        <button onClick={navigate('/home')} id="prev-quote">Prev Quote</button>
+      <div id="buttons">       
         <button onClick={getQuote} id="new-quote">New Quote</button>
       </div>
     </div>
